@@ -21,6 +21,7 @@ image = load_image(image_path)
 mask = load_image(mask_path)
 canny = CannyDetector()
 canny_image = canny(image)
+prompt = "children's clothing model"
 
 image_res = pipe(
     prompt,
